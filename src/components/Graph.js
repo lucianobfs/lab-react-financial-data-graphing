@@ -3,6 +3,8 @@ import Chart from "chart.js/auto";
 import axios from "axios";
 
 import InputDate from "./InputDate";
+import Highest from "./Highest";
+import Lowest from "./Lowest";
 
 
 
@@ -57,8 +59,8 @@ function Graph() {
                 }
 
                 let chartInstance = new Chart(ctx, {
-                    // width: "100px",
-                    // height: "100px",
+                    width: "100px",
+                    height: "100px",
                     type: 'line',
                     data: {
                         labels: Object.keys(priceData),
@@ -75,6 +77,7 @@ function Graph() {
                 })
 
                 setChart(chartInstance)
+
             }
 
             renderChart()
@@ -92,6 +95,15 @@ function Graph() {
             {loading ? <div className="spinner-border" role="status">
   <span className="visually-hidden">Loading...</span>
 </div> : <canvas id="myCanvas" className="mt-5" />}
+
+
+        <div className="d-flex justify-content-around">
+            <Lowest teste={priceData} dados={data}/>
+
+            <Highest teste={priceData} dados={data}/>
+        </div>
+
+
         </div>
     )
 

@@ -59,7 +59,7 @@ function InputDate(props) {
                 <option value="BRL" >BRL</option>
             </select>
 
-            <button type="submit"  className="btn btn-light">Filter</button>
+            <button type="submit"  className="btn btn-light w-100">Filter</button>
 
 
         </form>

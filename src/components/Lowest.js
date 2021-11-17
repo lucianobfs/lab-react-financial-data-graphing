@@ -24,7 +24,7 @@ function Lowest(props) {
 
     
     return (
-        <h2>Lower Price: {symbol} {menor}</h2>
+        <h2>Lowest Price: {symbol} {menor}</h2>
     )
 
 }

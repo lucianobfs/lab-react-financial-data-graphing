@@ -92,7 +92,7 @@ function Graph() {
 
             </div>
         
-            {loading ? <div className="spinner-border" role="status">
+            {loading ? <div className="spinner-border align-content-center" role="status">
   <span className="visually-hidden">Loading...</span>
 </div> : <canvas id="myCanvas" className="mt-5" />}
 
